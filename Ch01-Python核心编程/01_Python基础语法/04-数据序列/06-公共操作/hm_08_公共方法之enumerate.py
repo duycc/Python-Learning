@@ -4,6 +4,5 @@ list1 = ['a', 'b', 'c', 'd', 'e']
 # for i in enumerate(list1):
 #     print(i)
 
-for i in enumerate(list1, start=1):
-    print(i)
-
+for index, val in enumerate(list1, start=1):
+    print("list[{}]={}".format(index, val))

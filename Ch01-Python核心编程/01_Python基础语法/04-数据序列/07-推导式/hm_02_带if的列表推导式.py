@@ -14,9 +14,3 @@ print(list2)
 # 3. 把for循环配合if的代码 改写 带if的列表推导式
 list3 = [i for i in range(10) if i % 2 == 0]
 print(list3)
-
-
-
-
-
-

@@ -5,8 +5,8 @@ s1 = {10, 20, 30, 40, 50}
 dict1 = {'name': 'TOM', 'age': 18}
 
 # del 目标 或del(目标)
-# del str1
-# print(str1)
+del str1
+print(str1)
 
 # del(list1)
 # print(list1)
@@ -20,4 +20,3 @@ dict1 = {'name': 'TOM', 'age': 18}
 # print(dict1)
 del dict1['name']
 print(dict1)
-

@@ -7,4 +7,3 @@ user_info('TOM')
 user_info('TOM', 20)
 user_info('TOM', 20, 'man')
 user_info()
-

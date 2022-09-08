@@ -12,4 +12,3 @@ def func(a, b):
 # 3. 调用reduce，作用：功能函数计算的结果和序列的下一个数据做累计计算
 result = functools.reduce(func, list1)
 print(result)
-

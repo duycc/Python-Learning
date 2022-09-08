@@ -35,5 +35,3 @@ print(bb)  # 列表是可变类型
 
 print(id(aa))
 print(id(bb))
-
-

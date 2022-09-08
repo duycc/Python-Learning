@@ -15,14 +15,13 @@
 
 
 # 4. 可变参数：*args
-# fn4 = lambda *args: args
-# print(fn4(10, 20))
-# print(fn4(10, 20, 30, 40))
-# print(fn4(10))
+fn4 = lambda *args: args
+print(fn4(10, 20))
+print(fn4(10, 20, 30, 40))
+print(fn4(10))
 
 
 # 5. 可变参数：**kwargs
 fn5 = lambda **kwargs: kwargs
 print(fn5(name='Python'))
 print(fn5(name='Python', age=30))
-

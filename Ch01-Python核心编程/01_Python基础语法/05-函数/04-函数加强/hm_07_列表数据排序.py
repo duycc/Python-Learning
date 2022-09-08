@@ -1,7 +1,7 @@
 students = [
     {'name': 'TOM', 'age': 20},
     {'name': 'ROSE', 'age': 19},
-    {'name': 'Jack', 'age': 22}
+    {'name': 'Jack', 'age': 22},
 ]
 
 # sort(key=lambda..., reverse=bool数据)
