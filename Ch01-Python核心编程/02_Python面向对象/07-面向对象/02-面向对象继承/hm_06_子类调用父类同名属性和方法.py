@@ -47,5 +47,3 @@ daqiu.make_master_cake()
 daqiu.make_school_cake()
 
 daqiu.make_cake()
-
-

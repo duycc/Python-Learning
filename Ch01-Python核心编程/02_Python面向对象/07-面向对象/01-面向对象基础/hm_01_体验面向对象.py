@@ -6,7 +6,7 @@ class 类名():
 """
 
 
-class Washer():
+class Washer:
     def wash(self):
         print('能洗衣服')
 
@@ -22,6 +22,3 @@ print(haier)
 
 # 使用wash功能 -- 实例方法/对象方法 -- 对象名.Wash()
 haier.wash()
-
-
-

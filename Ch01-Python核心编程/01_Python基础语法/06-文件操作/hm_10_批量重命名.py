@@ -18,5 +18,5 @@ for i in file_list:
         # 删除前缀
         num = len('Python_')
         new_name = i[num:]
-# 3. 重命名
+    # 3. 重命名
     os.rename(i, new_name)

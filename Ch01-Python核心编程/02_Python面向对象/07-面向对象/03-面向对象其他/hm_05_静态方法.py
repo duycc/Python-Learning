@@ -12,6 +12,3 @@ wangcai = Dog()
 wangcai.info_print()
 
 Dog.info_print()
-
-
-
