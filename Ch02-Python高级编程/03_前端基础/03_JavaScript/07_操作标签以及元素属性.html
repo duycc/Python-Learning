@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        window.onload = function () {
+            var oInput = document.getElementById("input1");
+            var oA = document.getElementById("link01");
+
+            var sValue = oInput.value;
+            var sType = oInput.type;
+            var sName = oInput.name;
+            var sLinks = oA.herf;
+
+            oA.className = "sty02";
+
+            oA.style.color = "red";
+            oA.style.fontSize = sValue;
+
+
+            var oDiv = document.getElementById("div1");
+            var sText = oDiv.innerHTML;
+            alert(sText);
+            oDiv.innerHTML = '<a href="https://www.baidu.com">百度<a/>';
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" name="setsize" id="input1" value="20px">
+    <a href="#" id="link01" class="sty01">这是一个链接</a>
+
+    <div id="div1">这是一个div元素</div>
+</body>
+
+</html>

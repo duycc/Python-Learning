@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var iA = 12; // 全局变量
+        function fnAlert() {
+            var iB = 23; // 局部变量
+            alert(iB);
+
+            iA++;
+        }
+        fnAlert();
+
+        alert(iA);
+        alert(iB);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
