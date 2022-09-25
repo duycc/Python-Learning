@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+
+    <style type="text/css">
+        p {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .big {
+            font-size: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: gold;
+        }
+
+        .con {
+            width: 300px;
+            height: 80px;
+            background: green;
+        }
+
+        .con span {
+            color: red;
+        }
+
+        .con .pink {
+            color: pink;
+        }
+
+        .con .gold {
+            color: gold;
+        }
+
+        #box {
+            color: yellow;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            background: red;
+        }
+
+        .box2 {
+            background: pink;
+        }
+
+        .box3 {
+            background: gold;
+        }
+
+        .box1:hover {
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 1. 标签选择器 -->
+    <div>hello</div>
+    <p>hello</p>
+
+    <!-- 2. 类选择器-->
+    <div class="blue">这是一个div</div>
+    <h3 class="blue big box">这是一个标题</h3>
+    <p class="blue box">这是一个段落</p>
+
+    <!-- 3. 层级选择器-->
+    <div class="con">
+        <span>哈哈</span>
+        <a href="#" class="pink">百度</a>
+        <a href="#" class="gold">谷歌</a>
+    </div>
+    <span>你好</span>
+    <a href="#" class="pink">新浪</a>
+
+    <!-- 4. id选择器 -->
+    <p id="box">这是一个段落标签</p>
+    <p>这是第二个段落标签</p>
+
+    <!-- 5. 组选择器 -->
+    <div class="box1">这是第一个div</div>
+    <div class="box2">这是第二个div</div>
+    <div class="box3">这是第三个div</div>
+
+    <!-- 6. 伪类选择器 -->
+</body>
+
+</html>
