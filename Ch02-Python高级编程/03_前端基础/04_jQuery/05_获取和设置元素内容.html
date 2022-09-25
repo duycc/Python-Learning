@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+
+            var $div = $("#div1");
+            //  获取标签的html内容
+            var result = $div.html();
+            alert(result);
+            //  设置标签的html内容，之前的内容会清除
+            $div.html("<span style='color:red'>你好</span>");
+            //  追加html内容
+            $div.append("<span style='color:red'>你好</span>");
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <p>hello</p>
+    </div>
+</body>
+
+</html>

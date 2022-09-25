@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var $a = $("#link01");
+            var $input = $('#input01')
+
+            // 获取元素属性
+            var sId = $a.prop("id");
+            alert(sId);
+
+            // 设置元素属性
+            $a.prop({ "href": "http://www.baidu.com", "title": '这是去到百度的链接', "class": "a01" });
+
+            //  获取value属性
+            var sValue = $input.prop("value");
+            alert(sValue);
+
+            // 获取value属性使用val()方法的简写方式
+            var sValue = $input.val();
+            alert(sValue);
+            // 设置value值
+            $input.val("222222");
+        });
+    </script>
+</head>
+
+<body>
+    <a id="link01">这是一个链接</a>
+    <input type="text" id="input01" value="111111">
+</body>
+
+</html>
