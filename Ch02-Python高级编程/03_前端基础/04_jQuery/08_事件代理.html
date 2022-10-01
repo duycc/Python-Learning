@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+
+            // var $div1 = $('#div1');
+            // var $div2 = $('#div2');
+
+            // $div1.click(function () {
+            //     alert($(this).html());
+            // });
+
+            // $div2.click(function () {
+            //     alert($(this).html());
+            // });
+
+            // $ali = $('#list li');
+            // $ali.click(function () {
+            //     $(this).css({ background: 'red' });
+            // });
+
+
+            $list = $('#list');
+            // 父元素ul 来代理 子元素li的点击事件
+            $list.delegate('li', 'click', function () {
+                // $(this)表示当前点击的子元素对象
+                $(this).css({ background: 'red' });
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1" style="width:200px; height:200px; background: red;">
+        <div id="div2" style="width:100px; height:100px;background: yellow;">
+            哈哈
+        </div>
+    </div>
+
+
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

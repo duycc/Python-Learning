@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        // $.ajax({
+        //     url: "http://t.weather.sojson.com/api/weather/city/101010100",
+        //     type: "GET",
+        //     dataType: "JSON",
+        //     success: function (response) {
+        //         console.log(response);
+        //     },
+        //     error: function () {
+        //         alert("请求失败，请稍后重试");
+        //     },
+        // });
+        $.get("http://t.weather.sojson.com/api/weather/city/101010100", function (dat, status) {
+            console.log(dat);
+            console.log(status);
+            alert(dat);
+        }).error(function () {
+            alert("网络异常");
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

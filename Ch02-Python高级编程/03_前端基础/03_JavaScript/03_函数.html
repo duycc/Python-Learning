@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fnAlert() {
+            alert("hello");
+        }
+        fnAlert();
+
+        function fnAdd(iNum1, iNum2) {
+            var iRes = iNum1 + iNum2;
+            return iRes;
+            alert("after return stmt"); // 不会执行
+        }
+
+        var iRes = fnAdd(3, 5);
+        alert(iRes);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

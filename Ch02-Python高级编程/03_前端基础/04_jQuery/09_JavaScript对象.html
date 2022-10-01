@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var person = new Object();
+
+        person.name = "tom";
+        person.age = 24;
+
+        person.sayName = function () {
+            alert(this.name);
+        }
+
+        alert(person.age);
+        person.sayName();
+
+
+        var person2 = {
+            name: "Rose",
+            age: 18,
+            sayName: function () {
+                alert("Name is: " + this.name);
+            }
+        }
+
+        alert(person2.age);
+        person2.sayName();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
